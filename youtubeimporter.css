@@ -1,0 +1,242 @@
+/* Start importer */
+.youtubeimporter {
+    margin:25px
+}
+.input-special {
+    color:#84CC16;
+    border-color:#84CC16
+}
+.ytclarify {
+    padding: 15px;
+    border: 1px solid #252B3B;
+    border-radius: 4px;
+    background: #252B3B;
+    color: #f5f5f5;
+    display: block;
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+.ytclarify a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+#ytsuggestalternatives {
+    display: block;
+    position: relative;
+    width: 100%;
+    clear: both;
+    padding: 15px 0;
+    margin: 10px 0;
+}
+.ytsaved {
+    width: 30px;
+    height: 30px;
+    border-radius: 500px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.ytsaved:before {
+    font-family: "Material Icons";
+    content: "\f188";
+    color: #fff;
+    font-size: 28px;
+    line-height: 1;
+    color: #84CC16;
+}
+.youtubepresentation {
+    padding:25px;
+    border-bottom:1px solid #eee
+}
+.headimporterthumb {
+    border-radius:12px; margin:0 auto;
+}
+.importerstage {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;}
+
+.importerstage .cards {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 40px 40px;
+    grid-template-areas: ". . . . .";
+}
+
+.importerstage .card {
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    max-width: 360px;
+    width:100%;
+    border: 1px solid #eee;
+    position:relative
+}
+.importerstage .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.importerstage .cardPagination {
+    padding: 35px 25px;
+    background: #f96868;
+    color: #fff;
+}
+
+.importerstage .cardPagination p.cardfooter {
+    padding: 15px 0;
+}
+.importerstage .card.youtubepresentation {
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 720px;
+    height:180px;
+    color:#fff
+}
+.importerstage .card.youtubepresentation h1 {
+    background: #111;
+    display: inline;
+    padding: 5px 8px;
+    border-radius: 12px;
+    margin-left:-5px
+
+}
+.importerstage .card.youtubepresentation h1,
+.importerstage .card.youtubepresentation h4,
+.importerstage .card.youtubepresentation h5 {
+    color:#fff
+}
+.importerstage .card.youtubepresentation img{
+
+    width:100%;
+    height:100%
+
+}
+.importerstage .cardImage {
+
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    width:100%;
+    min-height:150px;
+    max-height: 180px;
+    object-fit: cover;
+    position:relative;
+
+}
+.importerstage .cardImage div.checkingyt {
+    position: absolute!important;
+    left: 5px;
+    top: 5px;
+}
+.importerstage .cardImageSide {
+    position: absolute!important;
+    right: 5px;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.importerstage .cardImageSide  {
+    opacity:0
+}
+.importerstage .card:hover .cardImageSide {
+    opacity:1
+}
+.importerstage .cardImage img {
+    width:100%;
+    height:100%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+
+
+}
+.importerstage .cardText {
+    padding: 12px;
+    background: #fff;
+}
+
+.importerstage .cardTitle {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #333;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 600;
+    height: 44px;
+    padding: 4px 8px;
+}
+
+.youtubeimporter-options {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    bottom: -10px;
+    right: 10%;
+    z-index: 99;
+    background: #100F0F;
+    border: 1px solid #100F0F;
+    padding: 10px 10px 16px;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 1px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+}
+.youtubeimporter-options .btn {
+margin:0 5px
+}
+.roundBtn{
+    display: inline-flex;
+    width: 38px;
+    height: 38px;
+    background: #1a73e8;
+    border-radius: 50%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    margin: 5px 0;
+    vertical-align: middle;
+    color:#fff;
+    font-size: 24px;
+}
+.roundBtn:hover{
+    color:#f1f1f1f1
+}
+.roundBtn.roundGrey{
+    background-color: #f8f8f8;
+    border-color: #d3d3d3;
+    color: #555;
+}
+.roundBtn.roundRed{
+    background-color: #F08080;
+    border-color: #F08080;
+}
+.ytduplicate {
+    background: #F5f5f5;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    color: #F08080;
+    font-weight: bold;
+}
+.ytduplicate.ytgrabbed {
+    color: #1a73e8;
+}
+
+/* End importer */

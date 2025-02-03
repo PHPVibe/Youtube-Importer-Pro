@@ -1,0 +1,8 @@
+Thank you for choosing this PHPVibe plugin!
+
+To use it simply upload the contents to your /root folder.
+Make sure the files in /moderator go into /moderator, or into the new name you gave your admin folder (if different).
+
+Once uploded you will see a Youtube import link in the left menu of the admin panel.
+
+For any questions please see us at https://forums.phpvibe.com
